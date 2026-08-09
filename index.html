@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samarth Srivastava | Portfolio</title>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-main: #1e252f;
+            --card-bg: #ffffff;
+            --text-dark: #212931;
+            --text-muted: #717a8a;
+            --accent: #18bfef;
+            --accent-hover: #129ec6;
+            --border: #eeeeee;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 1.8;
+            padding: 0;
+        }
+
+        /* --- MASSIVELY HEADER STYLING --- */
+        #intro-header {
+            text-align: center;
+            padding: 5rem 1.5rem 4rem 1.5rem;
+            color: #ffffff;
+        }
+
+        #intro-header h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        #intro-header p {
+            font-size: 1.2rem;
+            color: #a0aab8;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* --- MAIN CONTAINER CARD --- */
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto 4rem auto;
+            background: var(--card-bg);
+            border-radius: 4px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .main-content {
+            padding: 4rem 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 2rem 1.5rem;
+            }
+            #intro-header h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        /* --- SECTION HEADINGS --- */
+        h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: var(--border);
+            margin: 1rem auto 0 auto;
+        }
+
+        /* --- PROFILE / FEATURED IMAGE --- */
+        .image-featured {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .image-featured img {
+            width: 100%;
+            max-width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* --- TEXT & SECTIONS --- */
+        section {
+            margin-bottom: 3.5rem;
+        }
+
+        p.lead {
+            font-size: 1.15rem;
+            text-align: center;
+            color: var(--text-dark);
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        /* --- RESEARCH INTEREST TAGS --- */
+        .interests-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .interest-tag {
+            border: 2px solid var(--text-dark);
+            color: var(--text-dark);
+            padding: 0.5rem 1.2rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .interest-tag:hover {
+            background: var(--text-dark);
+            color: #ffffff;
+        }
+
+        /* --- BUTTONS --- */
+        .actions {
+            text-align: center;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            background: transparent;
+            color: var(--text-dark);
+            border: 2px solid var(--text-dark);
+            padding: 0.8rem 2rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: var(--text-dark);
+            color: #ffffff;
+        }
+
+        .btn-primary {
+            background: var(--text-dark);
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent);
+            border-color: var(--accent);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            color: #717a8a;
+            font-size: 0.85rem;
+            padding-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MASSIVELY HERO HEADER -->
+    <header id="intro-header">
+        <h1>Samarth Srivastava</h1>
+        <p>BS-MS Dual Degree Student @ IISER Pune</p>
+    </header>
+
+    <!-- MAIN CONTAINER CARD -->
+    <div class="wrapper">
+        <div class="main-content">
+
+            <!-- FEATURED PHOTO SECTION -->
+            <div class="image-featured">
+                <!-- Replace 'profile.jpg' with your photo filename -->
+                <img src="C:\Users\Samarth\OneDrive\Desktop\profile.jpeg" alt="Samarth Srivastava">
+            </div>
+
+            <!-- INTRODUCTION SECTION -->
+            <section id="intro">
+                <h2>Introduction</h2>
+                <p class="lead">
+                    I am an aspiring astrophysicist and researcher driven by a fundamental question: How did our universe evolve, and what secrets are hidden within its most extreme environments? As a BS-MS student at the Indian Institute of Science Education and Research (IISER) Pune, I bridge theoretical physics with computational modeling to study complex cosmic phenomena.
+
+My core academic and research interests lie at the intersection of Cosmology, High-Energy Astrophysics, Dark Matter, and Black Hole physics. Whether parsing large astronomical datasets or auditing advanced theoretical frameworks, I am passionate about decoding the mathematical laws that govern the universe.
+
+🔭 Core Research Interests:
+• Cosmology & the Evolution of the Universe
+• Dark Matter Detection & Particle Physics
+• Black Hole Thermodynamics & Deep Space Phenomena
+
+I am actively seeking research internships, academic fellowships, and collaborative opportunities at premier global space agencies and research institutes. Let's connect to discuss space-time, quantum mechanics, or the next frontier of astronomical data.
+                </p>
+            </section>
+
+            <!-- RESEARCH INTERESTS SECTION -->
+            <section id="interests">
+                <h2>Research Interests</h2>
+                <div class="interests-grid">
+                    <span class="interest-tag">Black Hole Physics</span>
+                    <span class="interest-tag">Dark Matter Phenomenology</span>
+                    <span class="interest-tag">High-Energy Astrophysics</span>
+                    <span class="interest-tag">Cosmology</span>
+                    <span class="interest-tag">Neutrino Physics</span>
+                    <span class="interest-tag">Interstellar Medium (ISM)</span>
+                </div>
+            </section>
+
+            <!-- DOWNLOAD CV ACTION -->
+            <section id="cv-action" style="margin-bottom: 0;">
+                <div class="actions">
+                    <!-- Replace 'CV.pdf' with your PDF filename -->
+                    <a href="CV.pdf" target="_blank" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i> Download CV</a>
+                    <a href="mailto:samarth.srivastava@students.iiserpune.ac.in" class="btn"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Samarth Srivastava $\cdot$ Hosted on GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
