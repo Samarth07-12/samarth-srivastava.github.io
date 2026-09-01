@@ -154,6 +154,71 @@
             color: #ffffff;
         }
 
+        /* --- ITEM CARDS (SCHOLARSHIPS & CERTIFICATES) --- */
+        .item-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .item-card {
+            border-left: 3px solid var(--text-dark);
+            padding-left: 1.25rem;
+            text-align: left;
+            transition: border-color 0.2s ease;
+        }
+
+        .item-card:hover {
+            border-left-color: var(--accent);
+        }
+
+        .item-card h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.15rem;
+            color: var(--text-dark);
+            margin-bottom: 0.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .item-card .item-meta {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        .item-card p {
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            margin: 0;
+        }
+
+        .cert-link {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid var(--accent);
+            padding: 0.2rem 0.6rem;
+            border-radius: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .cert-link:hover {
+            background: var(--accent);
+            color: #ffffff;
+        }
+
         /* --- BUTTONS --- */
         .actions {
             text-align: center;
@@ -219,7 +284,6 @@
 
             <!-- FEATURED PHOTO SECTION -->
             <div class="image-featured">
-                <!-- Replace 'profile.jpg' with your photo filename -->
                 <img src="profile.jpeg" alt="Samarth Srivastava">
             </div>
 
@@ -253,10 +317,53 @@
                 </div>
             </section>
 
+            <!-- SCHOLARSHIPS SECTION -->
+            <section id="scholarships">
+                <h2>Scholarships &amp; Fellowships</h2>
+                <div class="item-list">
+                    <div class="item-card">
+                        <h3>PM YASASVI Scholarship (Top Class College Education)</h3>
+                        <div class="item-meta">Ministry of Social Justice and Empowerment, Govt. of India &middot; 2025 &ndash; Present</div>
+                        <p>Awarded a prestigious national scholarship providing full financial support for tuition, living expenses, and academic resources based on merit.</p>
+                    </div>
+                    <div class="item-card">
+                        <h3>Shraman Foundation Scholarship</h3>
+                        <div class="item-meta">Shraman Foundation &middot; 2025 &ndash; Present</div>
+                        <p>Selected for a highly competitive merit-cum-means scholarship awarded to undergraduate science and engineering students enrolled at premier Indian institutes (IISERs, IITs, NITs).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACADEMIC PROGRAMS & CERTIFICATES SECTION -->
+            <section id="certificates">
+                <h2>Certificates &amp; Academic Programs</h2>
+                <div class="item-list">
+                    <div class="item-card">
+                        <h3>
+                            Intro2Astro: Introduction to Astronomy Research
+                            <a href="intro2astro_certificate.png" target="_blank" class="cert-link">
+                                <i class="fa-solid fa-up-right-from-square"></i> View Certificate
+                            </a>
+                        </h3>
+                        <div class="item-meta">Online Global Workshop &middot; Summer 2026</div>
+                        <p>Selected for an intensive, competitive 6-week program introducing foundational tools and workflows utilized in professional astrophysics research.</p>
+                    </div>
+                    <div class="item-card">
+                        <h3>Python4Physics</h3>
+                        <div class="item-meta">University of California, Berkeley (REYES Program) &middot; Summer 2026</div>
+                        <p>Gained foundational skills in using Python for scientific computing, modelling physical systems, and data analysis.</p>
+                    </div>
+                    <div class="item-card">
+                        <h3>Introductory School on Astronomy and Astrophysics</h3>
+                        <div class="item-meta">IISER Mohali &middot; June 2026</div>
+                        <p>Attended intensive lecture modules covering stellar evolution, galactic dynamics, and observational techniques.</p>
+                    </div>
+                </div>
+            </section>
+
             <!-- DOWNLOAD CV ACTION -->
             <section id="cv-action" style="margin-bottom: 0;">
                 <div class="actions">
-                    <!-- Replace 'CV.pdf' with your PDF filename -->
                     <a href="CV.pdf" target="_blank" class="btn btn-primary"><i class="fa-solid fa-file-pdf"></i> Download CV</a>
                     <a href="mailto:samarth.srivastava@students.iiserpune.ac.in" class="btn"><i class="fa-solid fa-envelope"></i> Contact Me</a>
                 </div>
